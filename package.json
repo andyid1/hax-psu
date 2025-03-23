@@ -1,0 +1,79 @@
+{
+    "name": "@andyid1/hax-psu",
+    "version": "0.0.0",
+    "description": "Webcomponent hax-psu following hax / open-wc recommendations",
+    "license": "Apache-2.0",
+    "author": {
+        "name": "andyid1"
+    },
+    "keywords": [
+        "webcomponents",
+        "lit",
+        "haxtheweb"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/andyid1/hax-psu"
+    },
+    "type": "module",
+    "main": "hax-psu.js",
+    "module": "hax-psu.js",
+    "scripts": {
+        "start": "web-dev-server",
+        "build": "rimraf public && rollup -c rollup.config.js && npm run analyze",
+        "analyze": "cem analyze --litelement --exclude public",
+        "release": "npm run build && commit-and-tag-version && git push --follow-tags origin main && npm publish",
+        "test": "web-test-runner test/**/*.test.js --coverage --node-resolve",
+        "test:watch": "web-test-runner test/**/*.test.js --node-resolve --watch"
+    },
+    "resolutions": {
+        "@shoelace-style/shoelace": "2.8.0"
+    },
+    "dependencies": {
+        "@haxtheweb/accent-card": "^10.0.2",
+        "@haxtheweb/count-up": "^10.0.2",
+        "@haxtheweb/d-d-d": "^10.0.2",
+        "@haxtheweb/future-terminal-text": "^10.0.2",
+        "@haxtheweb/grid-plate": "^10.0.2",
+        "@haxtheweb/hax-iconset": "^10.0.2",
+        "@haxtheweb/i18n-manager": "^10.0.2",
+        "@haxtheweb/page-section": "^10.0.2",
+        "@haxtheweb/play-list": "^10.0.2",
+        "@haxtheweb/rpg-character": "^10.0.2",
+        "@haxtheweb/scroll-button": "^10.0.2",
+        "@haxtheweb/simple-colors": "^10.0.2",
+        "@haxtheweb/simple-cta": "^10.0.2",
+        "@haxtheweb/simple-icon": "^10.0.2",
+        "@haxtheweb/simple-img": "^10.0.2",
+        "@haxtheweb/utils": "^10.0.0",
+        "@haxtheweb/video-player": "^10.0.2",
+        "@shoelace-style/shoelace": "github:shoelace-style/shoelace",
+        "lit": "^3.2.1"
+    },
+    "devDependencies": {
+        "@babel/preset-env": "^7.16.4",
+        "@custom-elements-manifest/analyzer": "^0.10.3",
+        "@open-wc/building-rollup": "^3.0.2",
+        "@open-wc/testing": "^4.0.0",
+        "@rollup/plugin-babel": "^6.0.4",
+        "@rollup/plugin-node-resolve": "^15.2.3",
+        "@rollup/plugin-terser": "^0.4.4",
+        "@web/dev-server": "^0.4.6",
+        "@web/rollup-plugin-html": "^2.3.0",
+        "@web/rollup-plugin-import-meta-assets": "^2.2.1",
+        "@web/test-runner": "^0.19.0",
+        "babel-plugin-template-html-minifier": "^4.1.0",
+        "babel-plugin-transform-dynamic-import": "^2.1.0",
+        "commit-and-tag-version": "^12.4.1",
+        "rimraf": "^5.0.7",
+        "rollup-plugin-esbuild": "^6.1.1"
+    },
+    "private": false,
+    "publishConfig": {
+        "access": "public"
+    },
+    "hax": {
+        "cli": true
+    },
+    "customElements": "custom-elements.json"
+}

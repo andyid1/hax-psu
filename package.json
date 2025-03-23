@@ -17,7 +17,7 @@
     },
     "type": "module",
     "main": "hax-psu.js",
-    "module": "hax-psu.js",
+    "module": "src/hax-psu.js",
     "scripts": {
         "start": "web-dev-server",
         "build": "rimraf public && rollup -c rollup.config.js && npm run analyze",
@@ -66,7 +66,7 @@
         "babel-plugin-transform-dynamic-import": "^2.1.0",
         "commit-and-tag-version": "^12.4.1",
         "rimraf": "^5.0.7",
-        "rollup-plugin-esbuild": "^6.1.1"
+        "rollup-plugin-esbuild": "^6.2.1"
     },
     "private": false,
     "publishConfig": {

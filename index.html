@@ -6,11 +6,38 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="Description" content="Demonstration for hax-psu">
-
+  <link rel="icon" href="assets/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/icon-48x48.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="96x96" href="assets/icon-96x96.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/icon-192x192.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
+  <meta name="theme-color" content="#1e407c" />
+  <link
+    rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Roboto&family=Press+Start+2P&display=swap"
+    as="style"
+    onload="this.onload=null;this.rel='stylesheet';"
+  />
   <style>
-    :root, html, body {
+  html, body {
       margin: 0;
       padding: 0;
+      font-family: 'Roboto',Helvetica,Arial,Lucida,sans-serif;
+      --primary-color-1: #001e44;
+      --primary-color-1-50: #001e4450;
+      --primary-color-2: #1e407c;
+      --primary-color-3: #ffffff;
+      --secondary-color-1: #96bee6;
+      --secondary-color-2: #009cde;
+      --bg-color-1: #ffffff;
+      --bg-color-2: #eef3f7;
+      --link-color-1: #005fa9;
+      --link-color-2: #ccdae6;
+      background-color: var(--primary-color-1);
     }
     #demo {
       margin: var(--ddd-spacing-2);
@@ -32,7 +59,7 @@
   <title>hax-psu</title>
 </head>
 
-<body>
+<body vocab="http://schema.org/" prefix="oer:http://oerschema.org cc:http://creativecommons.org/ns dc:http://purl.org/dc/terms/">
 <!--
   <div id="demo">
     <h1>hax-psu</h1> -->
@@ -130,5 +157,27 @@
       </ul>
     </div>
   </details> -->
+
+  <hax-psu>
+    <div class="load-wrapper">
+      <h1><span class="text">Create <span class="create">WEBSITES</span></span>
+        <div>
+          <span class="text">with </span><span class="hax">HAX</span>
+        </div>
+      </h1>
+      <p class="entice-wrapper"><span class="psu-entice">Part of <strong>Penn State</strong>?</span></p>
+      <div class="btn-wrapper">
+        <a tabindex="-1" href="/login.php">
+          <button class="btn">Start &gt;</button>
+        </a>
+        <a tabindex="-1" href="https://hax.cloud">
+          <button class="btn btn2">Try HAX (demo)</button>
+        </a>
+        <a tabindex="-1" href="https://haxtheweb.org">
+          <button class="btn btn2">Learn HAX</button>
+        </a>
+      </div>
+    </div>
+  </hax-psu>
 </body>
 </html>
